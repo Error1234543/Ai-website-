@@ -6,7 +6,7 @@ from flask import Flask, request, jsonify, send_from_directory
 from flask_cors import CORS
 
 # CONFIG
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "")
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "AIzaSyB5TA6nDIj8VARsC4LPfdxu7_HBnetmPg8")
 PORT = int(os.getenv("PORT", 8000))
 
 if not GEMINI_API_KEY:
