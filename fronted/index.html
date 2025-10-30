@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>NEET Doubt Solver AI</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app">
+    <header>
+      <h1>NEET Doubt Solver AI</h1>
+      <p class="sub">Upload question image or type your doubt — AI will explain step-by-step.</p>
+    </header>
+
+    <section class="compose">
+      <textarea id="prompt" placeholder="Type your question here..."></textarea>
+      <div class="controls">
+        <label class="filebtn">Choose Image<input type="file" id="imageInput" accept="image/*" /></label>
+        <button id="askText">Ask (text)</button>
+        <button id="askImage">Ask (image)</button>
+      </div>
+    </section>
+
+    <section class="output">
+      <h2>Answer</h2>
+      <pre id="response">Answers will appear here...</pre>
+    </section>
+
+    <footer>Powered by Gemini • Frontend: Netlify • Backend: Flask</footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
